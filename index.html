@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>MaxGraph New Site</title>
+  <link rel="preload" href="fonts/SFProDisplayRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplayMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplaySemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SFProDisplayBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <div class="header__top">
+      <button class="burger" aria-label="Открыть меню">
+                <span></span>
+            </button>
+      <nav class="nav header-nav header-nav--active nav__top" title="Главное меню">
+        <ul class="header__top-list list-reset nav__list">
+          <li class="nav__item"><a href="#" class="nav__link" data-scroll>Магазины</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-scroll>Акции</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-scroll>Доставка и оплата</a></li>
+        </ul>
+      </nav>
+      <a href="index.html" class="logo header__logo">
+        <img loading="lazy" src="img/logo.svg" class="image" width="80" height="76" alt="Логотип Drive Moto">
+      </a>
+      <div class="header__address address">
+        <img class="address__img" loading="lazy" src="img/location.svg" class="image" width="30" height="30" alt="Иконка Локации">
+        <p class="address__text">
+          Москва, ул. Науки 25
+        </p>
+      </div>
+      <div class="header__btns">
+        <button class="favorite">
+          <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+        </button>
+        <button class="profile">
+          <img loading="lazy" src="img/profile.svg" class="image" width="24" height="24" alt="profile icon">
+        </button>
+        <div class="header__cart cart active">
+          <div class="cart-main btn-reset">
+            <img loading="lazy" src="img/cart.svg" class="image" width="30" height="22" alt="cart icon">
+            <span class="cart__quantity">0</span>
+          </div>
+          <div class="cart-content">
+            <ul class="cart-content__list list-reset" data-simplebar>
+              <!-- <li class="cart-content__item">
+                <article class="cart-content__product cart-product">
+                  <img src="../img/sea doo gti 155 blue.png" alt="квадроцикл" class="cart-product__img">
+                  <div class="cart-product__text">
+                    <h4 class="cart-product__title">Гидроцикл BRP SeaDoo GTI 155hp SE&nbsp;Long Blue Metallic</h4>
+                    <span class="cart-product__price">1&nbsp;100&nbsp;475&nbsp;₽</span>
+                  </div>
+                  <button class="cart-product__delete btn-reset"></button>
+                </article>
+              </li> -->
+            </ul>
+            <div class="cart-content__bottom">
+              <div class="cart-content__fullprice fullprice">
+                <span class="fullprice__title">Итого:</span>
+                <span class="fullprice__price"></span>
+              </div>
+              <button class="cart-content__btn btn-reset">
+                Перейти в корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <nav class="nav header-nav header-nav--active nav__bottom" title="Второе меню">
+        <ul class="header__bottom-list list-bottom nav__list list-reset">
+          <li class="nav__item list-bottom__item"><a href="#" class="nav__link list-bottom__link">Квадроциклы</a></li>
+          <li class="nav__item list-bottom__item"><a href="#" class="nav__link list-bottom__link">Катера</a></li>
+          <li class="nav__item list-bottom__item"><a href="catalog.html" class="nav__link list-bottom__link">Гидроциклы</a></li>
+          <li class="nav__item list-bottom__item"><a href="#" class="nav__link list-bottom__link">Лодки</a></li>
+          <li class="nav__item list-bottom__item"><a href="#" class="nav__link list-bottom__link">Вездеходы</a></li>
+          <li class="nav__item list-bottom__item"><a href="#" class="nav__link list-bottom__link">Снегоходы</a></li>
+          <li class="nav__item list-bottom__item"><a href="#" class="nav__link list-bottom__link">Двигатели</a></li>
+          <li class="nav__item list-bottom__item"><a href="#" class="nav__link list-bottom__link">Запчасти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+        <section class="hero">
+  <div class="container hero__container">
+    <div class="swiper swiper-hero mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="img/slider-banner.webp" type="image/webp">
+            <img loading="lazy" src="img/.slider-banner" class="image" width="" height="" alt="">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="img/slider-banner2.webp" type="image/webp">
+            <img loading="lazy" src="img/.slider-banner2" class="image" width="" height="" alt="">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="img/slider-banner3.webp" type="image/webp">
+            <img loading="lazy" src="img/.slider-banner3" class="image" width="" height="" alt="">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="img/slider-banner4.webp" type="image/webp">
+            <img loading="lazy" src="img/.slider-banner4" class="image" width="" height="" alt="">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="img/slider-banner.webp" type="image/webp">
+            <img loading="lazy" src="img/.slider-banner" class="image" width="" height="" alt="">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="img/slider-banner.webp" type="image/webp">
+            <img loading="lazy" src="img/.slider-banner" class="image" width="" height="" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-hero__next"></div>
+      <div class="swiper-button-prev swiper-hero__prev"></div>
+      <div class="swiper-pagination swiper-hero__pagination"></div>
+    </div>
+    <div class="hero__stock stock">
+      <div class="stock__top">
+        <small class="stock__text">
+          акция
+        </small>
+        <div class="stock__price">
+          <p class="stock__price-actual">
+            190 000
+            <img loading="lazy" src="img/рубль.svg" class="image" width="15" height="18" alt="знак рубля">
+          </p>
+          <p class="stock__price-crossed">
+            225 000
+            <img loading="lazy" src="img/рубль.svg" class="image" fill="" width="15" height="18" alt="знак рубля">
+          </p>
+        </div>
+      </div>
+      <div class="stock__img">
+        <picture class="stock__picture">
+          <source srcset="img/motor.webp" type="image/webp">
+          <img loading="lazy" src="img/motor.jpg" class="image" width="125" height="176" alt="Лодочный мотор Suzuki DF9.9BRS">
+        </picture>
+        <p class="stock__name">
+          Лодочный мотор Suzuki DF9.9BRS
+        </p>
+      </div>
+      <div class="stock__bottom">
+        <p class="stock__bottom-text">
+          Акция действует до
+        </p>
+        <small class="stock__bottom-date">
+          31.08.2020
+        </small>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="search">
+  <div class="container search__container">
+    <div class="search-top">
+      <button class="search__link">Поиск по номеру</button>
+      <button class="search__link">Поиск по марке</button>
+      <button class="search__link">Поиск по названию товара</button>
+    </div>
+    <div class="search-bottom">
+      <form action="/serach_page.php" class="search__form">
+        <input type="text" placeholder="Введите марку" class="search__input">
+        <button class="search__button" type="submit">искать</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+        <section class="categories">
+  <div class="container categories__container">
+    <div class="categories__item">
+      <div class="categories__left">
+        <h3 class="categories__title">
+          Квадроциклы
+        </h3>
+        <a href="#" class="categories__link">Подробее</a>
+      </div>
+      <div class="categories__img">
+        <picture>
+          <source srcset="img/квадроцыкл.webp" type="image/webp">
+          <img loading="lazy" src="img/квадроцыкл.png" class="image" width="130" height="100" alt="фотография квадроцыкла">
+        </picture>
+      </div>
+    </div>
+    <div class="categories__item">
+      <div class="categories__left">
+        <h3 class="categories__title">
+          Гидроциклы
+        </h3>
+        <a href="#" class="categories__link">Подробее</a>
+      </div>
+      <div class="categories__img">
+        <picture>
+          <source srcset="img/Гидроцикл.webp" type="image/webp">
+          <img loading="lazy" src="img/Гидроцикл.png" class="image" width="152" height="81" alt="фотография квадроцыкла">
+        </picture>
+      </div>
+    </div>
+    <div class="categories__item">
+      <div class="categories__left">
+        <h3 class="categories__title">
+          Катера
+        </h3>
+        <a href="#" class="categories__link">Подробее</a>
+      </div>
+      <div class="categories__img">
+        <picture>
+          <source srcset="img/Катер.webp" type="image/webp">
+          <img loading="lazy" src="img/Катер.png" class="image" width="207" height="101" alt="фотография квадроцыкла">
+        </picture>
+      </div>
+    </div>
+    <div class="categories__item">
+      <div class="categories__left">
+        <h3 class="categories__title">
+          Снегоходы
+        </h3>
+        <a href="#" class="categories__link">Подробее</a>
+      </div>
+      <div class="categories__img">
+        <picture>
+          <source srcset="img/Снегоход.webp" type="image/webp">
+          <img loading="lazy" src="img/Снегоход.png" class="image" width="165" height="105" alt="фотография Снегохода">
+        </picture>
+      </div>
+    </div>
+    <div class="categories__item">
+      <div class="categories__left">
+        <h3 class="categories__title">
+          Вездеходы
+        </h3>
+        <a href="#" class="categories__link">Подробее</a>
+      </div>
+      <div class="categories__img">
+        <picture>
+          <source srcset="img/Вездеход.webp" type="image/webp">
+          <img loading="lazy" src="img/Вездеход.png" class="image" width="157" height="101" alt="фотография Вездехода">
+        </picture>
+      </div>
+    </div>
+    <div class="categories__item">
+      <div class="categories__left">
+        <h3 class="categories__title">
+          Двигатели
+        </h3>
+        <a href="#" class="categories__link">Подробее</a>
+      </div>
+      <div class="categories__img categories__img-last">
+        <picture>
+          <source srcset="img/Двигател.webp" type="image/webp">
+          <img loading="lazy" src="img/Двигател.png" class="image" width="66" height="113" alt="фотография Двигательа">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="popular">
+  <div class="container popular__container">
+    <div class="popular__top">
+      <h2 class="popular__title">
+        Популярные товары
+      </h2>
+      <ul class="popular__menu menu-popular list-reset">
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">запчасти</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">моторы</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">шины</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">электроника</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">инструменты</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">аксессуары </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <div class="popular__bottom">
+      <div class="container-fluid">
+        <div class="popular__container container">
+          <div class="content-popular">
+            <div class="swiper mySwiper popular-contnet">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/vest.jpg" alt="vest" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Спасательный жилет BRP Men’s Airflow PFD
+                      </h3>
+                      <p class="item-popular__price">
+                        6 900 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/audio.jpg" alt="audio" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        BRP Audio-Premium      System
+                      </h3>
+                      <p class="item-popular__price">
+                        68 000 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/equip.jpg" alt="equip" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Спасательное      снаряжение
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next popular-swiper__next"></div>
+            <div class="swiper-button-prev popular-swiper__prev"></div>
+          </div>
+          <div class="popular__more">
+            <button class="popular__more-btn">
+              Показать еще
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+        <section class="banner">
+  <div class="container banner__container">
+    <a href="#" class="banner__link">
+      <div class="banner__ad ad-banner">
+        <div class="ad-banner__img">
+          <picture>
+            <source srcset="img/banner.webp" type="image/webp">
+            <img loading="lazy" src="img/banner" class="image" width="327" height="116" alt="Фотография квадроциклов">
+          </picture>
+        </div>
+        <div class="ad-banner__content">
+          <h3 class="ad-banner__text">
+            СКИДКИ         на все запчасти до 70%
+          </h3>
+        </div>
+        <div class="ad-banner__action">
+          <button class="ad-banner__btn">
+            ПОСМОТЕТЬ ВСЕ
+          </button>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+        <section class="popular">
+  <div class="container popular__container">
+    <div class="popular__top">
+      <h2 class="popular__title">
+        Популярные товары
+      </h2>
+      <ul class="popular__menu menu-popular list-reset">
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">запчасти</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">моторы</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">шины</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">электроника</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">инструменты</a>
+        </li>
+        <li class="menu-popular__item">
+          <a href="#" class="menu-popular__link">аксессуары </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <div class="popular__bottom">
+      <div class="container-fluid">
+        <div class="popular__container container">
+          <div class="content-popular">
+            <div class="swiper mySwiper popular-contnet">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/vest.jpg" alt="vest" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Спасательный жилет BRP Men’s Airflow PFD
+                      </h3>
+                      <p class="item-popular__price">
+                        6 900 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/audio.jpg" alt="audio" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        BRP Audio-Premium      System
+                      </h3>
+                      <p class="item-popular__price">
+                        68 000 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/equip.jpg" alt="equip" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Спасательное      снаряжение
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide swiper-slide__popular">
+                  <article class="product">
+                    <div class="popular__item item-popular">
+                      <button class="favorite item-popular__favorite">
+                        <img loading="lazy" src="img/favorite.svg" class="image" width="24" height="22" alt="favorite icon">
+                      </button>
+                      <img src="img/bagpack.png" alt="backpack" class="item-popular__img">
+                      <h3 class="item-popular__title">
+                        Водонепроницаемый Рюкзак
+                      </h3>
+                      <p class="item-popular__price">
+                        9 800 ₽
+                      </p>
+                      <button class="item-popular__cart product__btn">
+                        <img loading="lazy" src="img/cart-white.svg" class="image" width="30" height="22" alt="favorite icon">
+                      </button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next popular-swiper__next"></div>
+            <div class="swiper-button-prev popular-swiper__prev"></div>
+          </div>
+          <div class="popular__more">
+            <button class="popular__more-btn">
+              Показать еще
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__top">
+      <div class="footer__form">
+        <form action="#" class="form-footer">
+          <h3 class="footer__text">
+            Подпишитесь на нашу рассылку и узнавайте о акция быстрее
+          </h3>
+          <input type="email" class="form-footer__input" placeholder="Введите ваш e-mail:">
+          <input type="submit" class="form-footer__submit">
+        </form>
+      </div>
+      <div class="footer__links">
+        <nav class="nav footer-nav" title="">
+          <h2 class="footer-nav__title">
+            Информация
+          </h2>
+          <ul class="nav__list list-reset">
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">О компани</a></li>
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Контакты</a></li>
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Акции</a></li>
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Магазины</a></li>
+          </ul>
+        </nav>
+        <nav class="nav footer-nav" title="">
+          <h2 class="footer-nav__title">
+            Интернет-магазин
+          </h2>
+          <ul class="nav__list list-reset">
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Доставка и самовывоз</a></li>
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Оплата</a></li>
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Возврат-обмен</a></li>
+            <li class="nav__item footer-nav__item"><a href="#" class="nav__link footer-nav__link">Новости</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__social social">
+        <nav class="nav social__menu" title="">
+          <ul class="nav__list list-reset social__list">
+            <li class="nav__item social__item"><a href="#" class="nav__link social__link">
+              <img loading="lazy" src="img/instagram.svg" class="image" width="30" height="30" alt="Иконка Инстаграма">
+            </a></li>
+            <li class="nav__item social__item"><a href="#" class="nav__link social__link">
+              <img loading="lazy" src="img/vk.svg" class="image" width="30" height="30" alt="Иконка Инстаграма">
+            </a></li>
+            <li class="nav__item social__item"><a href="#" class="nav__link social__link">
+              <img loading="lazy" src="img/facebook.svg" class="image" width="30" height="30" alt="Иконка Инстаграма">
+            </a></li>
+            <li class="nav__item social__item"><a href="#" class="nav__link social__link">
+              <img loading="lazy" src="img/youtube.svg" class="image" width="30" height="30" alt="Иконка Инстаграма">
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <small class="footer__bottom-text">Договор оферты</small>
+      <small class="footer__bottom-text">Политика обработки персональных данных</small>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
